@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="formulario.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário HTML/CSS</title>
+    <link rel="stylesheet" href="formulario.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário Básico com HTML e CSS</h1>
+    </header>
+
+    <form>
+      <fieldset>
+        <legend><strong>Responda o Formulário:</strong></legend>
+
+        <div class="First_part">
+          <label for="fname">Nome:</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname">Sobrenome:</label>
+          <input type="text" id="lname" name="lname" required /><br />
+        </div>
+
+        <div class="Second_part">
+          <label for="email">Coloque o seu email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Não esqueça de colocar (@)"
+            required
+          />
+        </div>
+
+        <div class="Third_Part">
+          <label for="area">Área de Atuação:</label><br />
+          <input
+            type="radio"
+            id="frontend"
+            name="frontend"
+            value="Front-End"
+            checked
+          />
+          <label for="frontend">Front-End</label>
+          <input type="radio" id="backend" name="backend" value="Back-End" />
+          <label for="backend">Back-End</label>
+          <input
+            type="radio"
+            id="fullstack"
+            name="fullstack"
+            value="Fullstack"
+          />
+          <label for="fullstack">Fullstack</label>
+        </div>
+
+        <div class="Fourth_Part">
+          <label for="anos">Atua na área há quantos anos?</label>
+          <select id="experiencia" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="1ano">Até 1 ano</option>
+            <option value="2ano">Até 2 anos</option>
+            <option value="3ano+">De 3 anos pra mais</option>
+          </select>
+        </div>
+
+        <div class="Fifth_Part">
+          <label for="skills">Quais tecnologias você domina:</label><br />
+          <input type="checkbox" id="html" name="html" value="HTML" />
+          <label for="html">HTML</label>
+          <input type="checkbox" id="css" name="css" value="CSS">
+          <label for="css">CSS</label>
+
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>
