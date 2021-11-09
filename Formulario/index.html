@@ -18,7 +18,7 @@
 
         <div class="First_part">
           <label for="fname">Nome:</label>
-          <input type="text" id="fname" name="fname" required />
+          <input type="text" id="fname" name="fname" required autofocus />
           <label for="lname">Sobrenome:</label>
           <input type="text" id="lname" name="lname" required /><br />
         </div>
@@ -35,24 +35,20 @@
         </div>
 
         <div class="Third_Part">
-          <label for="area">Área de Atuação:</label><br />
+          <label for="MainArea">Área de Atuação:</label><br />
+
           <input
             type="radio"
             id="frontend"
-            name="frontend"
+            name="area"
             value="Front-End"
             checked
           />
-          <label for="frontend">Front-End</label>
-          <input type="radio" id="backend" name="backend" value="Back-End" />
-          <label for="backend">Back-End</label>
-          <input
-            type="radio"
-            id="fullstack"
-            name="fullstack"
-            value="Fullstack"
-          />
-          <label for="fullstack">Fullstack</label>
+          <label for="area">Front-End</label>
+          <input type="radio" id="backend" name="area" value="Back-End" />
+          <label for="area">Back-End</label>
+          <input type="radio" id="fullstack" name="area" value="Fullstack" />
+          <label for="area">Fullstack</label>
         </div>
 
         <div class="Fourth_Part">
@@ -67,11 +63,39 @@
 
         <div class="Fifth_Part">
           <label for="skills">Quais tecnologias você domina:</label><br />
+
           <input type="checkbox" id="html" name="html" value="HTML" />
           <label for="html">HTML</label>
-          <input type="checkbox" id="css" name="css" value="CSS">
+          <input type="checkbox" id="css" name="css" value="CSS" />
           <label for="css">CSS</label>
+          <input
+            type="checkbox"
+            id="javascript"
+            name="javascript"
+            value="JAVASCRIPT"
+          />
+          <label for="javascript">JavaScript</label>
+          <input type="checkbox" id="python" name="python" value="PYTHON" />
+          <label for="python">Python</label>
 
+          <div class="Sixty_Part">
+            <label for="aboutyou" class="About_You"
+              ><strong> Conte-me um pouco mais sobre você:</strong></label
+            >
+            <textarea
+              name="aboutyou"
+              id="aboutyou"
+              cols="60"
+              rows="20"
+              maxlength="1000"
+              autocomplete="on"
+              required
+            ></textarea>
+          </div>
+
+          <div class="Seventy_Part">
+            <button type="submit" class="Button">Enviar Formulário</button>
+          </div>
         </div>
       </fieldset>
     </form>
