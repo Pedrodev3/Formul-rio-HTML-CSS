@@ -1,0 +1,22 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #588157;
+}
+
+/* Design do header */
+header {
+  font-size: 0.87rem;
+  border: 2px solid #dad7cd;
+  border-radius: .5rem;
+}
+fieldset {
+  border: 2px solid #dad7cd;
+  border-radius: .5rem;
+}
+legend {
+  font-size: 1.1rem;
+}
+.Input_Area {
+  border: 2px solid #dad7cd;
+  border-radius: .5rem;
+}

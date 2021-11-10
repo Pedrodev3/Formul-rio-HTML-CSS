@@ -1,0 +1,26 @@
+/* Layout macro da página com Grid */
+
+.Main_Grid{
+  display: grid;
+  grid-template:
+    "header" 160px
+    "form"   135px
+    /500px;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+form {
+  grid-area: form;
+  
+  height: 20vh;
+}
+
+
+
+
+
