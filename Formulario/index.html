@@ -20,7 +20,7 @@
 
       <fieldset class="fieldset">
         <legend class="legend"><strong>Responda o Formulário:</strong></legend>
-        <form>
+        <form name="formulario" onsubmit="send()">
           <div class="First_part Layout">
             <label for="fname">Nome:</label>
             <input
@@ -124,11 +124,16 @@
             </div>
 
             <div class="Seventy_Part Input_Area Layout">
-              <button type="submit" class="Button">Enviar Formulário</button>
+              <button type="submit" value="Enviar">Enviar Formulário</button>
             </div>
           </div>
         </form>
       </fieldset>
     </main>
+    <script>
+      function send() {
+        alert("Formulário Enviado Com Sucesso");
+      }
+    </script>
   </body>
 </html>
