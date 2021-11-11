@@ -13,16 +13,15 @@
     </style>
   </head>
   <body>
-    <main class="Main_Grid">
+    <main class="container">
       <header>
         <h1>Formulário Básico com HTML e CSS</h1>
       </header>
 
-      <form>
-        <fieldset class="grid">
-          <legend><strong>Responda o Formulário:</strong></legend>
-
-          <div class="First_part">
+      <fieldset class="fieldset">
+        <legend class="legend"><strong>Responda o Formulário:</strong></legend>
+        <form>
+          <div class="First_part Layout">
             <label for="fname">Nome:</label>
             <input
               type="text"
@@ -42,7 +41,7 @@
             /><br />
           </div>
 
-          <div class="Second_part">
+          <div class="Second_part Layout">
             <label for="email">Coloque o seu email:</label>
             <input
               type="email"
@@ -55,6 +54,7 @@
             <label for="phone">Coloque o seu telefone:</label>
             <input
               type="tel"
+              class="Input_Area"
               id="phone"
               name="phone"
               maxlength="12"
@@ -63,7 +63,7 @@
             />
           </div>
 
-          <div class="Third_Part">
+          <div class="Third_Part Layout">
             <label for="MainArea">Área de Atuação:</label><br />
 
             <input
@@ -80,7 +80,7 @@
             <label for="area">Fullstack</label>
           </div>
 
-          <div class="Fourth_Part">
+          <div class="Fourth_Part Layout">
             <label for="anos">Atua na área há quantos anos?</label>
             <select id="experiencia" class="Input_Area" required>
               <option selected disabled value="">Selecione</option>
@@ -90,7 +90,7 @@
             </select>
           </div>
 
-          <div class="Fifth_Part">
+          <div class="Fifth_Part Layout">
             <label for="skills">Quais tecnologias você domina:</label><br />
 
             <input type="checkbox" id="html" name="html" value="HTML" />
@@ -107,7 +107,7 @@
             <input type="checkbox" id="python" name="python" value="PYTHON" />
             <label for="python">Python</label>
 
-            <div class="Sixty_Part">
+            <div class="Sixty_Part Layout">
               <label for="aboutyou" class="About_You"
                 ><strong> Conte-me um pouco mais sobre você:</strong></label
               >
@@ -116,19 +116,19 @@
                 class="Input_Area"
                 id="aboutyou"
                 cols="60"
-                rows="20"
+                rows="15"
                 maxlength="1000"
                 autocomplete="on"
                 required
               ></textarea>
             </div>
 
-            <div class="Seventy_Part Input_Area">
+            <div class="Seventy_Part Input_Area Layout">
               <button type="submit" class="Button">Enviar Formulário</button>
             </div>
           </div>
-        </fieldset>
-      </form>
+        </form>
+      </fieldset>
     </main>
   </body>
 </html>
