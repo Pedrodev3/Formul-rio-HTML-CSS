@@ -2,21 +2,25 @@
   font-family: "Roboto", sans-serif;
   color: #588157;
 }
-
+body{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);  
+}
 /* Design do header */
 header {
   font-size: 0.87rem;
-  border: 2px solid #dad7cd;
-  border-radius: .5rem;
 }
+/* Design do Form */
 fieldset {
   border: 2px solid #dad7cd;
-  border-radius: .5rem;
+  border-radius: 8px;
 }
 legend {
   font-size: 1.1rem;
 }
 .Input_Area {
   border: 2px solid #dad7cd;
-  border-radius: .5rem;
+  border-radius: 8px;
+}
+.Seventy_Part{
+  display: inline-block;
 }

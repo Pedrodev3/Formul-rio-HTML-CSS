@@ -1,24 +1,38 @@
-/* Layout macro da página com Grid */
-
-.Main_Grid{
-  display: grid;
-  grid-template:
-    "header" 160px
-    "form"   135px
-    /500px;
+body{
+  width: 100vw;
+  height: 100vh;
+}
+/* Layout macro da página com flex */
+.container{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-header {
-  grid-area: header;
-  text-align: center;
+
+header{
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+.fieldset{
+  padding: 20px;
+  height: 700px;
+}
+.Layout{
+  padding: 18px;
+}
+.Sixty_Part{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+.About_You{
+  margin-bottom: 15px;
 }
 
-form {
-  grid-area: form;
-  
-  height: 20vh;
-}
+
+
+
 
 
 
