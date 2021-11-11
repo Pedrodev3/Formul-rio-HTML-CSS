@@ -16,10 +16,10 @@ header{
 }
 .fieldset{
   padding: 20px;
-  height: 700px;
+  height: 77vh;
 }
 .Layout{
-  padding: 18px;
+  padding: 16px;
 }
 .Sixty_Part{
   display: flex;
